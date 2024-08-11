@@ -2,9 +2,11 @@
 Terraform solutions to support the deployment of virtual machines to Proxmox in a home lab environment.
 
 # Environment Setup
-Install project dependencies
+Install Terraform CLI https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+For Ubuntu Linux
 ```
-apt install python3-venv
+apt install terraform
 ```
 Clone down the repository and confgigure the project environment
 ```
