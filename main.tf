@@ -24,7 +24,7 @@ resource "proxmox_vm_qemu" "vm" {
     sockets = 1
     cores = each.value.cores
     memory = each.value.memory_mb
-    scsihw = "virtio-scsi-single"
+    scsihw = "virtio-scsi-pci"
     ciuser = var.pve_cloud_init_user
     sshkeys = var.pve_cloud_init_ssh_key
     ipconfig0 = "ip=dhcp,ip6=dhcp"
